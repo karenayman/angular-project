@@ -19,9 +19,9 @@ export class ProductitemComponent implements OnInit {
   ngOnInit(): void {
   }
   onAddedToCartPressed(){
-    console.log('hamadaa');
+    // console.log('hamadaa');
     
-    this.productService.itemAdded.emit(this.productItem);
-    // this.productService.addItemToCard(this.productItem)
+    // this.productService.itemAdded.emit(this.productItem);
+    this.productService.addItemToCard(this.productItem)
   }
 }
